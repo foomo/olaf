@@ -1,0 +1,17 @@
+modulekind: commonjs
+tsclientflavor: async
+targets:
+  helloworld:
+    services:
+      /services/helloworld: Service
+      /services/helloworld-admin: AdminService
+    package: github.com/foomo/olaf/backend/services/helloworld
+    out: ../frontend/helloworld/services/helloworld.ts
+    tsrpc:
+      - Service
+      - AdminService
+
+mappings:
+  # github.com/foomo/olaf/backend/services/helloworld:
+  #   out: ../frontend/services/helloworld-vo.ts
+...
